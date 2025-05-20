@@ -147,4 +147,37 @@
   .glass-card {
     @apply bg-dark-accent/80 backdrop-blur-sm border border-white/10 rounded-lg;
   }
+  
+  /* Silver border animation */
+  .silver-border-animation {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 400%;
+    height: 400%;
+    background: conic-gradient(
+      transparent, 
+      transparent, 
+      transparent, 
+      #9F9EA1
+    );
+    animation: rotate 8s linear infinite;
+  }
+  
+  .silver-border-animation::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: black;
+    border-radius: calc(0.5rem - 2px);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }

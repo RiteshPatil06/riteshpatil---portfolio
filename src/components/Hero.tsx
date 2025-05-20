@@ -62,17 +62,23 @@ const Hero = () => {
         </div>
         
         <div className="md:col-span-2 flex justify-center md:justify-end animate-slideInFromRight" style={{ animationDelay: "0.4s" }}>
-          <div className="relative">
-            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-lg border-2 border-highlight p-2 overflow-hidden">
-              <div className="w-full h-full bg-dark-accent rounded-md overflow-hidden">
-                <img
-                  src="/lovable-uploads/59838b50-e539-4fb6-9c96-88b540645cb3.png"
-                  alt="Rohan Patankar"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                />
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+            <div className="w-full h-full overflow-hidden rounded-lg">
+              <img
+                src="/lovable-uploads/59838b50-e539-4fb6-9c96-88b540645cb3.png"
+                alt="Rohan Patankar"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+            
+            {/* Silver revolving border animation */}
+            <div className="absolute inset-0 rounded-lg pointer-events-none">
+              <div className="w-full h-full relative">
+                <div className="absolute inset-0 rounded-lg overflow-hidden">
+                  <div className="silver-border-animation"></div>
+                </div>
               </div>
             </div>
-            <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-highlight-alt rounded-lg -z-10"></div>
           </div>
         </div>
       </div>
