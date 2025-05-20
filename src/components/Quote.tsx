@@ -13,7 +13,7 @@ const Quote = () => {
   }, []);
   
   return (
-    <section className="py-24 bg-gradient-to-r from-dark to-dark-accent relative overflow-hidden animated-element">
+    <section className="py-24 bg-black relative overflow-hidden animated-element">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-highlight/5"></div>
