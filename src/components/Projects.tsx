@@ -19,7 +19,7 @@ const Projects = () => {
     { value: "all", label: "All Projects" },
     { value: "web", label: "Web Dev" },
     { value: "machine-learning", label: "Machine Learning" },
-    { value: "devops", label: "DevOps" }
+    // { value: "devops", label: "DevOps" }
   ];
   
   return (

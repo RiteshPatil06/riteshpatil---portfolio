@@ -48,8 +48,8 @@ const Experience = () => {
         
         <div className="flex justify-center mt-10">
           <Button variant="outline" className="border-highlight/40 text-highlight hover:bg-highlight/10">
-            <Briefcase className="mr-2 h-4 w-4" />
-            View Full Resume
+            {/* <Briefcase className="mr-2 h-4 w-4" /> */}
+            Coming Soon
           </Button>
         </div>
       </div>

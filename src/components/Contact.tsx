@@ -5,7 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import emailjs from "emailjs-com";
+import { Github, Linkedin, Mail, Twitter , Instagram} from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -22,26 +23,48 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+  
+    try {
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        "service_0tt1kpe", // Replace with your EmailJS Service ID
+        "template_ky7gvtn", // Replace with your EmailJS Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "BQXwXudcyJXfH69l4" // Replace with your EmailJS Public Key
+      );
+  
+      if (result.status === 200) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+  
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
       toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
       });
-      
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-      });
-      
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
   
   return (
@@ -65,8 +88,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:contact@example.com" className="text-muted-foreground hover:text-highlight">
-                    contact@example.com
+                  <a href="mailto:patilritesh4016@gmail.com" className="text-muted-foreground hover:text-highlight">
+                    patilritesh4016@gmail.com
                   </a>
                 </div>
               </div>
@@ -77,8 +100,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">LinkedIn</p>
-                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-highlight">
-                    linkedin.com/in/rohan
+                  <a href="https://linkedin.com/in/riteshpatil4016" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-highlight">
+                    linkedin.com/in/riteshpatil4016
                   </a>
                 </div>
               </div>
@@ -89,20 +112,20 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">GitHub</p>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-highlight">
-                    github.com/rohan
+                  <a href="https://github.com/RiteshPatil06" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-highlight">
+                    github.com/RiteshPatil06
                   </a>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
                 <div className="bg-dark-accent p-3 rounded-full">
-                  <Twitter className="h-5 w-5 text-highlight" />
+                  <Instagram className="h-5 w-5 text-highlight" />
                 </div>
                 <div>
-                  <p className="font-medium">Twitter</p>
-                  <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-highlight">
-                    @rohan_patankar
+                  <p className="font-medium">Instagram</p>
+                  <a href="https://www.instagram.com/dishkiiyaoonn" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-highlight">
+                    @dishkiiyaoonn
                   </a>
                 </div>
               </div>

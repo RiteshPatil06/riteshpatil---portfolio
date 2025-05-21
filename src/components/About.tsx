@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, View } from "lucide-react";
 import { skills } from "@/lib/data";
 
 const About = () => {
@@ -12,36 +12,43 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div className="space-y-6 max-w-2xl">
             <p className="text-lg">
-              Hi there! I'm <span className="text-highlight font-medium">Rohan</span>, an MLOps specialist and ML/DL
-              Engineer. Leveraging Advanced Technologies for Optimal Results.
+              Hi there! I'm <span className="text-highlight font-medium">Ritesh</span>, As an aspiring Machine Learning
+               Engineer with a strong foundation in ML, Deep Learning, and AI technologies, I bring a builder’s
+                mindset to every project I undertake.
             </p>
             
             <p>
-              With a deep passion for Machine Learning (ML), Deep Learning (DL), and MLOps, 
-              I am an accomplished engineer skilled in harnessing the power of modern web technologies 
-              to build exceptional websites.
+            With hands-on experience in developing intelligent systems, I specialize in leveraging 
+            modern ML/DL frameworks such as TensorFlow, Scikit-learn, and OpenAI APIs to build 
+            models that solve real-world problems. My journey from electronics to machine learning 
+            has been driven by curiosity, self-learning, and a deep commitment to building data-driven 
+            solutions that matter.
             </p>
             
+            <h2 className="section-heading">Real World Capabilities</h2>
+
             <p>
-              My expertise extends beyond aesthetics and functionality; I have a comprehensive 
-              understanding of ML and DL algorithms, frameworks, and techniques that enable me to 
-              create intelligent systems capable of analyzing vast amounts of data and delivering 
-              accurate predictions.
+            I excel in designing and implementing robust ML infrastructure and automation pipelines. 
+            I leverage state-of-the-art tools and frameworks such as Docker, Kubernetes,git actions,
+            Huggingface models,replicate models etc to optimize workflows, ensuring scalability and 
+            reproducibility of ML processes. My ability to seamlessly integrate ML solutions into 
+            existing systems empowers organizations to embrace the full potential of their data, 
+            gaining a competitive edge in today’s rapidly evolving market.If you are seeking a 
+            skilled ML/DL engineer and MLOps expert who can deliver exceptional results, I am 
+            confident in my ability to drive your organization’s success through innovative 
+            technologies and data-driven solutions. Let’s collaborate and unlock the power of ML 
+            and DL for your business
+            You can find my works here
             </p>
-            
-            <p>
-              I excel in designing and implementing robust ML infrastructure and automation pipelines. 
-              I leverage state-of-the-art tools and frameworks such as Docker, Kubernetes, git actions, 
-              Huggingface models, replicate models etc to optimize workflows, ensuring scalability and 
-              reproducibility of ML processes.
-            </p>
-            
-            <div className="pt-4">
-              <Button className="bg-highlight hover:bg-highlight-alt text-foreground">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
-            </div>
+
+            <a href="https://drive.google.com/file/d/1CJ7t7i60ysg5EclVqzd98y81Echc6Vwc/view?usp=sharing" target="_blank" rel="noreferrer">
+              <div className="pt-4">
+                <Button className="bg-highlight hover:bg-highlight-alt text-foreground">
+                  <View className="mr-2 h-4 w-4" />
+                  View Resume
+                </Button>
+              </div>
+            </a>
           </div>
           
           <div className="space-y-8">

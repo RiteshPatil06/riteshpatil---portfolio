@@ -9,16 +9,15 @@ const Hero = () => {
         <div className="md:col-span-3 animate-slideInFromLeft" style={{ animationDelay: "0.2s" }}>
           <p className="text-highlight font-mono mb-3">Hi there, I'm</p>
           <h1 className="text-5xl md:text-7xl font-bold mb-5">
-            Rohan Patankar
+            RITESH PATIL.
           </h1>
           <h2 className="text-2xl md:text-3xl text-foreground/70 mb-8 font-light">
-            Senior MLOps Engineer @ skima.ai && 
-            <br className="hidden md:block" /> Lead MLOps Engineer @ tarang.ai(MLx)
+            ML Engineer / Data Scientist
           </h2>
           
           <div className="flex flex-wrap gap-3 mb-8">
             <a 
-              href="https://github.com" 
+              href="https://github.com/RiteshPatil06" 
               target="_blank" 
               rel="noreferrer"
               className="bg-dark-accent/50 hover:bg-dark-accent text-foreground/80 hover:text-highlight p-3 rounded-full transition-colors"
@@ -27,7 +26,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/riteshpatil4016" 
               target="_blank" 
               rel="noreferrer"
               className="bg-dark-accent/50 hover:bg-dark-accent text-foreground/80 hover:text-highlight p-3 rounded-full transition-colors"
@@ -45,7 +44,7 @@ const Hero = () => {
               <Twitter size={20} />
             </a>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:patilritesh4016@gmail.com" 
               className="bg-dark-accent/50 hover:bg-dark-accent text-foreground/80 hover:text-highlight p-3 rounded-full transition-colors"
               aria-label="Email"
             >
@@ -63,7 +62,7 @@ const Hero = () => {
         
         <div className="md:col-span-2 flex justify-center md:justify-end animate-slideInFromRight" style={{ animationDelay: "0.4s" }}>
           <div className="relative">
-            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-lg border-2 border-highlight p-2 overflow-hidden">
+            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-lg border-2  p-2 overflow-hidden">
               <div className="w-full h-full bg-dark-accent rounded-md overflow-hidden">
                 <img
                   src="/lovable-uploads/59838b50-e539-4fb6-9c96-88b540645cb3.png"
@@ -72,7 +71,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-highlight-alt rounded-lg -z-10"></div>
+            <div className="absolute -bottom-3 -right-3 w-full h-full border-2  rounded-lg -z-10"></div>
           </div>
         </div>
       </div>

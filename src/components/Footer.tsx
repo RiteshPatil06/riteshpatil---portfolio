@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Rohan Patankar</h3>
+            <h3 className="text-xl font-bold">Ritesh Patil</h3>
             <p className="text-muted-foreground">
-              MLOps Engineer specializing in machine learning infrastructure and automation pipelines.
+              ML Engineer with specialization in Deep learning and Generative AI.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/RiteshPatil06" 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-foreground/60 hover:text-highlight transition-colors"
@@ -24,7 +24,7 @@ const Footer = () => {
                 <Github size={18} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/riteshpatil4016" 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-foreground/60 hover:text-highlight transition-colors"
@@ -33,16 +33,16 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://instagram.com/dishkiiyaoonn" 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-foreground/60 hover:text-highlight transition-colors"
                 aria-label="Twitter"
               >
-                <Twitter size={18} />
+                <Instagram size={18} />
               </a>
               <a 
-                href="mailto:contact@example.com" 
+                href="mailto:patilritesh4016@gmail.com" 
                 className="text-foreground/60 hover:text-highlight transition-colors"
                 aria-label="Email"
               >
@@ -67,8 +67,8 @@ const Footer = () => {
               Feel free to reach out for collaboration or any inquiries.
             </p>
             <p className="text-foreground/60">
-              <a href="mailto:contact@example.com" className="hover:text-highlight transition-colors">
-                contact@example.com
+              <a href="mailto:patilritesh4016@gmail.com.com" className="hover:text-highlight transition-colors">
+                patilritesh4016@gmail.com
               </a>
             </p>
           </div>
@@ -78,7 +78,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-foreground/60 text-sm">
-            © {currentYear} Rohan Patankar. All rights reserved.
+            © {currentYear} Ritesh Patil. All rights reserved.
           </p>
           <p className="text-foreground/60 text-xs">
             Designed & Built with <span className="text-highlight">♥</span>

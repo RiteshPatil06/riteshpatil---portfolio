@@ -34,7 +34,7 @@ const NavBar = () => {
       <div className="container-custom flex items-center justify-between">
         <a href="#hero" className="flex items-center gap-2 text-xl font-bold text-highlight transition hover:text-highlight-alt">
           <span className="font-mono">{"</>"}</span>
-          <span className="">Rohan Patankar</span>
+          <span className="">Ritesh Patil</span>
         </a>
         
         {/* Desktop Navigation */}
@@ -48,10 +48,10 @@ const NavBar = () => {
               {item.name}
             </a>
           ))}
-          <Button size="sm" variant="outline" className="ml-4 gap-2 border-highlight/30 text-highlight hover:text-highlight-alt hover:border-highlight">
+          {/* <Button size="sm" variant="outline" className="ml-4 gap-2 border-highlight/30 text-highlight hover:text-highlight-alt hover:border-highlight">
             <Sun size={16} />
             <span>Light</span>
-          </Button>
+          </Button> */}
         </nav>
         
         {/* Mobile Menu Button */}
