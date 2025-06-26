@@ -67,16 +67,17 @@ export const projects: ProjectItem[] = [
     id: 1,
     title: "AI-Powered Answer Machine",
     description: "AI driven question-answering system leveraging Groq function calling, Langchain and OpenAI APIs",
-    image: "https://ik.imagekit.io/6ilngyaqa/1747809237258-Screenshot_2025-05-21_120308_yjIwstDmI4.png",
+    image: "https://i.ibb.co/TDgTrsZh/Screenshot-2025-05-21-120308.png",
     tags: ["machine-learning", "python", "Langchain", "OpenAi", "nodejs", "typescript"],
     demoUrl: "https://answer-machine-perplexcity-style.vercel.app/",
     codeUrl: "https://github.com/RiteshPatil06/Answer-Machine"
   },
+  
   {
     id: 2,
     title: "IPL Match Winning Prediction",
     description: "Using ML Algorithms to predict the winning team in an IPL Match.",
-    image: "https://ik.imagekit.io/6ilngyaqa/1747808374713-Screenshot_2025-05-21_114901_xOnSh1acW.png",
+    image: "https://i.ibb.co/wh9DWz9X/Screenshot-2025-05-21-114901.png",
     tags: ["machine-learning", "python", "streamlit", "sklearn", "pandas"],
     demoUrl: "",
     codeUrl: "https://github.com/RiteshPatil06/IPL2023_WinningPrediction_EDA_Dashboard-main"
@@ -94,7 +95,7 @@ export const projects: ProjectItem[] = [
     id: 4,
     title: "Zoom Clone",
     description: "A real-time video conferencing application built with WebRTC and Node.js",
-    image: "https://ik.imagekit.io/6ilngyaqa/1747809784760-Screenshot_2025-05-21_121242_KEf5WPVx9M.png",
+    image: "https://i.ibb.co/zWpY5Vb2/Screenshot-2025-05-21-121242.png",
     tags: ["clerk", "react", "Stream API", "UI/UX", "web RTC", "webdev", "typescript"],
     demoUrl: "https://zoom-clone-tau-drab.vercel.app/",
     codeUrl: "https://github.com/RiteshPatil06/zoom-clone"
