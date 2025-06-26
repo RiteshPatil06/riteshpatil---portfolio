@@ -65,7 +65,7 @@ const Hero = () => {
             <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-lg border-2  p-2 overflow-hidden">
               <div className="w-full h-full bg-dark-accent rounded-md overflow-hidden">
                 <img
-                  src="/lovable-uploads/59838b50-e539-4fb6-9c96-88b540645cb3.png"
+                  src="public/pp.png"
                   alt="Rohan Patankar"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
